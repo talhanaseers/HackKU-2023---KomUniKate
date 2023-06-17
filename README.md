@@ -1,4 +1,4 @@
-**VIEW PROJECT SUBMISSION TO DEVPOST HERE:**https://devpost.com/software/kuk-komunikate
+**VIEW PROJECT SUBMISSION TO DEVPOST HERE:** https://devpost.com/software/kuk-komunikate
 
 **Inspiration - KomUniKate - About the Project:**
 
