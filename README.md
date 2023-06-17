@@ -1,3 +1,5 @@
+**VIEW PROJECT SUBMISSION TO DEVPOST HERE:**https://devpost.com/software/kuk-komunikate
+
 **Inspiration - KomUniKate - About the Project:**
 
 The inspiration behind KomUniKate came from the growing concern about online harassment and the need for a safer online space. In many online platforms, users often experience offensive or abusive comments that can be discouraging and intimidating. KomUniKate aims to mitigate this problem by using AI and machine learning to filter out inappropriate language in real-time, ensuring a more positive and respectful online communication experience.
