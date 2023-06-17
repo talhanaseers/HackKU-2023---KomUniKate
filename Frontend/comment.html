@@ -1,0 +1,61 @@
+<!--KomUniKate - HackKU 2023 PAGE 1, Saturday, April 15 2023-->
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>KomUniKate</title>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="style.css">
+		</head>
+
+		<body>
+				<div class="header">
+					<h1>KomUniKate</h1>
+				</div>
+
+		      	<div class="chat-window">
+		        	<div id="messages"></div>
+		      	</div>
+      
+      			
+
+		      	<form onsubmit="sendMessage(); return false;" class="chat-box">
+					<input type="text" id="messageInput" placeholder="Please KomUniKate your Komment here...">
+					<button type="submit">SUBMIT</button>
+				</form>
+
+		      <!--JavaScript Code below-->
+		      <script>
+				const url = "http://127.0.0.1:5500/api/";
+				let messages = document.getElementById('messages')
+				function getmessage(){fetch(url+'retrieve')
+  .then(response => response.json())
+  .then(data => {
+	messages.innerHTML = ''
+	for(let j=0; j < data.length; j++)
+	{
+		messages.innerHTML += `<p>${data[j].comment}</p>`
+	}
+  }).catch(error => console.error(error));}
+  getmessage();
+  function sendMessage() 
+	        		{
+							var messageInput = document.getElementById("messageInput");
+							var message = messageInput.value.trim();
+							if (message !== "") 
+							{
+								
+fetch(url+'post', {
+  method: "POST",
+ // headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(message)
+})
+.then(response => response.text())
+.then(data => getmessage())
+.catch(error => console.error(error));
+								messageInput.value = "";
+	        				}//end if
+        			}//end sendMessage
+		      	
+        		</script>
+		</body>
+</html>
