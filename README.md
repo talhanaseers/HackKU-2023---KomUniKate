@@ -1,5 +1,5 @@
 # KomUniKate: Enhancing Online Communication with AI-Powered Content Filtering
-##### View Project Submission on Devpost here:** https://devpost.com/software/kuk-komunikate
+##### View Project Submission on Devpost here: https://devpost.com/software/kuk-komunikate
 
 ### Inspiration:
 Online harassment and the prevalence of offensive and abusive comments have become growing concerns in today's digital landscape. KomUniKate was born from the need to foster a safer and more respectful online environment. This project addresses the discouraging and intimidating experiences users often face on various online platforms by harnessing the power of AI and machine learning to filter out inappropriate language in real-time.
